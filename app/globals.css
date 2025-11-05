@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+/* Fuente por defecto y ajustes globales */
+html, body {
+  height: 100%;
+}
+
+/* Clases de familias tipogr?ficas (sin dependencias externas) */
+.font-inter { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, Noto Sans, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif; }
+.font-roboto { font-family: Roboto, ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial, Noto Sans, sans-serif; }
+.font-poppins { font-family: Poppins, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, Noto Sans, sans-serif; }
+.font-montserrat { font-family: Montserrat, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, Noto Sans, sans-serif; }
+.font-merriweather { font-family: Merriweather, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif; }
+.font-playfair { font-family: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif; }
+.font-source-sans { font-family: "Source Sans 3", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, Noto Sans, sans-serif; }
+.font-lora { font-family: Lora, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif; }
+
+/***************************
+   Utilidades de impresi?n
+***************************/
+@media print {
+  .no-print { display: none !important; }
+  .page { 
+    margin: 0 !important; 
+    padding: 0 !important; 
+    box-shadow: none !important; 
+    width: 210mm !important; /* A4 */
+    min-height: 297mm !important;
+  }
+  body { background: white !important; }
+}
+
+/* Lienzo de CV con sombra en pantalla */
+.cv-canvas {
+  background: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
